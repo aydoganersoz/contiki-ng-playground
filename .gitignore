@@ -1,0 +1,9 @@
+# build folders
+build/
+
+# editor cache
+.vscode/
+
+# example executables
+*.native
+*.nrf52dk
