@@ -7,3 +7,4 @@ build/
 # example executables
 *.native
 *.nrf52dk
+*.jlink
