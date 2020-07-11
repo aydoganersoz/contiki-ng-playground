@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "contiki.h"
-#include "dev/leds.h"
 #include "sys/etimer.h"
 
 PROCESS(thread_1, "thread 1");
@@ -19,7 +18,6 @@ PROCESS_THREAD(thread_1, ev, data)
   while (1)
   {
     printf("I am thread 1\n");
-    leds_toggle(LEDS_LED1);
 
     /* Wait for the periodic timer to expire and then restart the timer. */
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&timer));
@@ -41,7 +39,6 @@ PROCESS_THREAD(thread_2, ev, data)
   while (1)
   {
     printf("I am thread 2\n");
-    leds_toggle(LEDS_LED2);
 
     /* Wait for the periodic timer to expire and then restart the timer. */
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&timer));
