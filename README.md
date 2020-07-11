@@ -52,4 +52,4 @@ picocom -fh -b 115200 --imap lfcrlf /dev/ttyACM0
 
 ### e01_hello_world
 
-Hello world application. Two threads running in parallel, the first one having ten seconds of period whereas the second one having five seconds. Different LEDs are toggled inside threads. 
+Hello world application. Two threads running in parallel, the first one having ten seconds of period whereas the second one having five seconds.
